@@ -79,9 +79,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.2s;
-    }
-    .producto p {
-      font-size: 10px;   
+    font-family: 'Roboto';
     }
     .producto:hover {
       transform: scale(1.05);
@@ -95,9 +93,11 @@
     .precio {
       color: #db504b;
       font-weight: bold;
+      font-size: 20px;   /* más grande */
+      line-height: 1;    /* evita que el texto se comprima */
       margin-top: 15px;
-      font-size: 70px; /* más grande que antes */
       text-shadow: 2px 2px 3px #00000033;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -121,7 +121,7 @@
     <div class="producto perfumes">
       <img src="imagenes/200102430-producto.webp" alt="perfume Ésika"> 
       <h3>PULSO ABSOLUTE</h3> 
-      <p>La fragancia fusiona notas seductoras de tabaco con vibrantes acordes de cardamomo y un toque de anís estrella.</p> 
+      <p>Notas de tabaco, cardamomo y un toque de anís estrella.</p> 
       <p class="precio">S/ 70.00</p> 
     </div> 
     <div class="producto perfumes"> 
@@ -133,7 +133,7 @@
     <div class="producto perfumes"> 
       <img src="imagenes/w=1500,h=1500,fit=pad (1).webp" alt="perfume Ésika"> 
       <h3>KALOS MAX</h3> 
-      <p>Disfruta de un perfume con aroma herbal súper agradable para usarlo todos los días. Bergamota, hojas de laurel de Madagascar y cedro.</p> 
+      <p>Aroma herbal con bergamota, laurel de Madagascar y cedro, ideal para todos los días.</p> 
       <p class="precio">S/ 80.00</p> 
     </div> 
     <div class="producto perfumes"> 
@@ -145,8 +145,14 @@
     <div class="producto perfumes"> 
       <img src="imagenes/w=800,h=800,fit=pad (1).webp" alt="perfume Ésika"> 
       <h3>KALOS ACTION</h3> 
-      <p>Aroma herbal aromático de muy alta concentración y muy larga duración, cuenta con refrescantes notas de jengibre de Madagascar y geranio.</p> 
+      <p>Aroma herbal intenso y duradero con notas de jengibre y geranio.</p> 
       <p class="precio">S/ 80.90</p> 
+    </div> 
+    <div class="producto perfumes"> 
+      <img src="imagenes/Perfume-Femenino-Dream-Nova-Esika-45-ml.webp" alt="perfume Ésika"> 
+      <h3>DREAM NOVA </h3> 
+      <p>Aroma floral y cítrico con lirio y sándalo, que despierta tu lado soñador.</p> 
+      <p class="precio">S/ 0.00</p> 
     </div> 
     <div class="producto maquillaje"> 
       <img src="imagenes/esika_crema.jpg" alt="Crema Ésika"> 
@@ -182,19 +188,25 @@
     <div class="producto perfumes"> 
       <img src="imagenes/w=1500,h=1500,fit=pad.webp" alt="Perfume L'Bel"> 
       <h3>EMPIRE</h3> 
-      <p>Aroma Herbal Aromática Ambarado. Con frescos acordes cítricos de bergamota que se combinan con las potentes facetas del musgo de roble y la elegancia del cuero.</p> 
+      <p>Aroma herbal ambarado con bergamota, musgo de roble y elegancia de cuero.</p> 
       <p class="precio">S/ 80.00</p> 
     </div> 
     <div class="producto perfume"> 
       <img src="imagenes/200105335_Live_Polo_Galeria1.webp" alt="Perfume L'Bel"> 
       <h3>LIVE POLO</h3> 
-      <p>Fragancia herbal aromática con notas frescas de bergamota y tomillo francés, que se combinan con toques de cuero y acentos de madera y gamuza.</p> 
+      <p>Fragancia herbal con bergamota, tomillo, cuero y acentos de madera y gamuza.</p> 
       <p class="precio">S/ 105.00</p> 
     </div>
     <div class="producto perfume"> 
       <img src="imagenes/public.webp" alt="Perfume L'Bel"> 
       <h3>BLUE INTENSE</h3> 
-      <p>Fragancia amaderado, aromático, elegante y sofisticada que cautiva los sentidos con su aroma fresco y duradero</p> 
+      <p>Fragancia amaderada y aromática, fresca, elegante y duradera.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto perfume"> 
+      <img src="imagenes/w=1500,h=1500,fit=pad (3).webp" alt="Perfume L'Bel"> 
+      <h3>FLEUR</h3> 
+      <p>Perfume floral-frutal de larga duración con notas de pera y mandarina, inspirado en la perfumería francesa.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
   </div>
@@ -218,7 +230,7 @@
     <div class="producto perfume"> 
       <img src="imagenes/images.jpg" alt="Perfume Cyzone"> 
       <h3>All Black</h3> 
-      <p>Aroma oriental especiado con toques frescos de cardamomo, notas dulces de tonka y cremoso cedro.</p> 
+      <p>Aroma oriental especiado con cardamomo, tonka y cedro cremoso.</p> 
       <p class="precio">S/ 55.00</p> 
     </div>
   </div>
@@ -226,7 +238,7 @@
     <div class="producto perfume"> 
       <img src="imagenes/w=1500,h=1500,fit=pad (2).webp" alt="Perfume Cyzone"> 
       <h3>NITRO NIGHT</h3> 
-      <p>Combinación de frescura, notas especiadas y un fondo cálido, gracias a la mezcla de jengibre, vetiver y ámbar</p> 
+      <p>Fresca y especiada, con fondo cálido de jengibre, vetiver y ámbar.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
   </div>
@@ -234,7 +246,7 @@
     <div class="producto perfume"> 
       <img src="imagenes/w=800,h=800,fit=pad (2).webp" alt="Perfume Cyzone"> 
       <h3>NEW COOL</h3> 
-      <p>Aroma oriental especiado, salida fresca por la bergamota, con notas de pimienta y ámbar.</p> 
+      <p>Aroma oriental especiado con bergamota, pimienta y ámbar.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
   </div>
@@ -242,15 +254,15 @@
     <div class="producto perfume"> 
       <img src="imagenes/cy_cool_intense_fotofondoblanco.webp" alt="Perfume Cyzone"> 
       <h3>NEW COOL INTENSE</h3> 
-      <p>Perfume de hombre fresco y audaz con bergamota, cedro y vainilla.</p> 
+      <p>Perfume fresco y audaz con bergamota, cedro y vainilla.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
   </div>
   <div class="catalogo cyzone">
     <div class="producto perfume"> 
-      <img src="imagenes/cy_cool_intense_fotofondoblanco.webp" alt="Perfume Cyzone"> 
+      <img src="imagenes/full_image-1.webp" alt="Perfume Cyzone"> 
       <h3>IDENTITY BLOOM</h3> 
-      <p>Perfume de hombre fresco y audaz con bergamota, cedro y vainilla.</p> 
+      <p>Aroma dulce de mandarina, jazmín y cedro, ideal para inspirar tu día.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
   </div>
