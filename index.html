@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Catálogo Virtual - Ésika, L'Bel y Cyzone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-top: 50px;
+      text-align: center;
+      color: #333;
+    }
+    .botones {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .botones button {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .botones button:hover {
+      background: #d81b60;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .imagenes {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .imagenes:hover {
+      transform: scale(1.05);
+    }
+    .imagenes img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .precio {
+      color: #d9534f;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Catálogo Virtual - Ésika, L'Bel y Cyzone 🌸</h1>
+
+  <!-- ================== ÉSIKA ================== -->
+  <h2>✨ Ésika</h2>
+  <div class="botones">
+    <button onclick="mostrarCategoria('esika','todos')">Todos</button>
+    <button onclick="mostrarCategoria('esika','perfumes')">Perfumes</button>
+    <button onclick="mostrarCategoria('esika','skincare')">Skincare</button>
+    <button onclick="mostrarCategoria('esika','maquillaje')">Maquillaje</button>
+    <button onclick="mostrarCategoria('esika','joyeria')">Joyería</button>
+  </div>
+
+  <div class="catalogo esika">
+    <div class="producto perfumes">
+      <img src="imagenes/200102430-producto.webp" alt="perfume Ésika">
+      <h3>PULSO ABSOLUTE</h3>
+      <p>La fragancia fusiona notas seductoras de tabaco con vibrantes acordes de cardamomo y un toque de anís estrella.</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto perfumes">
+      <img src="imagenes/200094217-FotoFondoBlanco.webp" alt="perfume Ésika">
+      <h3>DORSAY</h3>
+      <p>Combinación de notas herbales y amaderadas, con un toque fresco y limpio.</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto perfumes">
+      <img src="imagenes/w=1500,h=1500,fit=pad (1).webp" alt="perfume Ésika">
+      <h3>KALOS MAX</h3>
+      <p>Disfruta de un perfume con aroma herbal súper agradable para usarlo todos los días. Bergamota, hojas de laurel de Madagascar y cedro.</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto perfumes">
+      <img src="imagenes/w=800,h=800,fit=pad.webp" alt="perfume Ésika">
+      <h3>KALOS SPORT</h3>
+      <p>Disfruta de estas fragancias aromática, Amaderado, Musk, Verde/Herbal y cítrico.</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto perfumes">
+      <img src="imagenes/w=800,h=800,fit=pad (1).webp" alt="perfume Ésika">
+      <h3>KALOS ACTION</h3>
+      <p>Aroma herbal aromático de muy alta concentración y muy larga duración, cuenta con refrescantes notas de jengibre de Madagascar y geranio.</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto maquillaje">
+      <img src="imagenes/esika_crema.jpg" alt="Crema Ésika">
+      <h3>Crema Hidratante</h3>
+      <p>Nutrición profunda para la piel.</p>
+      <p class="precio">S/ 85</p>
+    </div>
+    <div class="producto joyeria">
+      <img src="imagenes/esika_rimel.jpg" alt="Rímel Ésika">
+      <h3>Rímel Mega Volumen</h3>
+      <p>Pestañas largas y definidas.</p>
+      <p class="precio">S/ 55</p>
+    </div>
+  </div>
+
+  <!-- ================== L'BEL ================== -->
+  <h2>💎 L'Bel</h2>
+  <div class="botones">
+    <button onclick="mostrarCategoria('lbel','todos')">Todos</button>
+    <button onclick="mostrarCategoria('lbel','perfumes')">Perfumes</button>
+    <button onclick="mostrarCategoria('lbel','skincare')">Skincare</button>
+    <button onclick="mostrarCategoria('lbel','maquillaje')">Maquillaje</button>
+    <button onclick="mostrarCategoria('lbel','joyeria')">Joyería</button>
+  </div>
+
+  <div class="catalogo lbel">
+    <div class="producto perfumes">
+      <img src="imagenes/w=1500,h=1500,fit=pad.webp" alt="Perfume L'Bel">
+      <h3>EMPIRE</h3>
+      <p>Aroma Herbal Aromática Ambarado. Con frescos acordes cítricos de bergamota que se combinan con las potentes facetas del musgo de roble y la elegancia del cuero.</p>
+      <p class="precio">S/ 1</p>
+    </div>
+    <div class="producto perfume">
+      <img src="imagenes/lbel_perfume.jpg" alt="Perfume L'Bel">
+      <h3>LIVE POLO</h3>
+      <p>Fragancia sofisticada y fresca.</p>
+      <p class="precio">S/ 150</p>
+    </div>
+    <div class="producto crema">
+      <img src="imagenes/lbel_crema.jpg" alt="Crema L'Bel">
+      <h3>Crema Nutritiva</h3>
+      <p>Hidratación profunda para todo tipo de piel.</p>
+      <p class="precio">S/ 95</p>
+    </div>
+    <div class="producto labial">
+      <img src="imagenes/lbel_labial.jpg" alt="Labial L'Bel">
+      <h3>Labial Luxe Matte</h3>
+      <p>Textura suave con acabado mate.</p>
+      <p class="precio">S/ 70</p>
+    </div>
+  </div>
+
+  <!-- ================== CYZONE ================== -->
+  <h2>🌸 Cyzone</h2>
+  <div class="botones">
+    <button onclick="mostrarCategoria('cyzone','todos')">Todos</button>
+    <button onclick="mostrarCategoria('cyzone','perfumes')">Perfumes</button>
+    <button onclick="mostrarCategoria('cyzone','skincare')">Skincare</button>
+    <button onclick="mostrarCategoria('cyzone','maquillaje')">Maquillaje</button>
+    <button onclick="mostrarCategoria('cyzone','joyeria')">Joyería</button>
+  </div>
+
+  <div class="catalogo cyzone">
+    <div class="producto perfume">
+      <img src="perfumes/images.jpg" alt="Perfume Cyzone">
+      <h3>All Black</h3>
+      <p>Aroma oriental especiado con toques frescos de cardamomo, notas dulces de tonka y cremoso cedro..</p>
+      <p class="precio">S/ </p>
+    </div>
+    <div class="producto sombras">
+      <img src="imagenes/cyzone_sombras.jpg" alt="Sombras Cyzone">
+      <h3>Sombras Urban Colors</h3>
+      <p>Paleta con tonos modernos y juveniles.</p>
+      <p class="precio">S/ 60</p>
+    </div>
+    <div class="producto labial">
+      <img src="imagenes/cyzone_labial.jpg" alt="Labial Cyzone">
+      <h3>Labial Trendy</h3>
+      <p>Colores divertidos y juveniles.</p>
+      <p class="precio">S/ 40</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarCategoria(marca, categoria) {
+      let catalogo = document.querySelectorAll('.' + marca + ' .producto');
+      catalogo.forEach(p => {
+        if (categoria === 'todos' || p.classList.contains(categoria)) {
+          p.style.display = 'block';
+        } else {
+          p.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
