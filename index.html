@@ -99,10 +99,38 @@
       text-shadow: 2px 2px 3px #00000033;
       white-space: nowrap;
     }
+    .boton-promocion {
+      display: inline-flex;
+      align-items: center;
+      background: #f2ebed;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .boton-promocion:hover {
+      background: #ff4081;
+    }
+
+    .icono-promocion {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
   <h1>🌸 Catálogo Virtual - Ésika, L'Bel y Cyzone 🌸</h1>
+
+  <div class="botones">
+  <a href="#promociones" class="boton-promocion">
+    <img src="imagenes/logo-oferta-png-4-1.webp" alt="Promoción" class="icono-promocion">
+    Promociones
+  </a>
+  </div>
 
   <!-- ================== ÉSIKA ================== -->
   <h2>✨ Ésika</h2>
@@ -208,51 +236,56 @@
       <img src="imagenes/200089509-FotoFondoBlanco.webp" alt="perfume Ésika"> 
       <h3>FRESHING</h3> 
       <p>Colonia cítrica y fresca con toques de bergamota, limón, naranja y lavanda.</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 48.00</p> 
     </div>
     <div class="producto cuidadopersonal"> 
       <img src="imagenes/w=800,h=800,fit=pad (13).webp" alt="cuidadopersonal Ésika"> 
       <h3>TALCO PARA PIES</h3> 
       <p>Talco Multicare para Pies, 500 g</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 35.00</p> 
     </div> 
     <div class="producto cuidadopersonal"> 
       <img src="imagenes/200103027-FotoFondoBlanco.webp" alt="cuidadopersonal Ésika"> 
       <h3>TALCO XTREME</h3> 
       <p>Talco Extreme para Pies Multicare, 230 g</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 28.00</p> 
     </div> 
     <div class="producto bebe"> 
       <img src="imagenes/200118771-producto.webp" alt="bebe Ésika"> 
-      <h3>SHAMPOO AGÚA (Lavanda y Jazmín)</h3> 
+      <h3>SHAMPOO AGÚ (Lavanda y Jazmín)</h3> 
       <p>Shampoo relajante para bebé con lavanda y jazmín.1 L</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 37.90</p> 
     </div>
     <div class="producto bebe"> 
       <img src="imagenes/w=800,h=800,fit=pad (14).webp" alt="bebe Ésika"> 
-      <h3>SHAMPOO AGÚA (Miel y Avena)</h3> 
+      <h3>SHAMPOO AGÚ (Miel y Avena)</h3> 
       <p>Shampoo nutritivo para bebé con miel y avena.1 L</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 47.90</p> 
     </div>
     <div class="producto bebe"> 
       <img src="imagenes/w=1500,h=1500,fit=pad (11).webp" alt="bebe Ésika"> 
-      <h3>SHAMPOO AGÚA (Manzanilla y Algodón)</h3> 
+      <h3>SHAMPOO AGÚ (Manzanilla y Algodón)</h3> 
       <p>Shampoo para bebé con manzanilla y algodón. Brillo y suavidad.1 L</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 47.90</p> 
     </div>
     <div class="producto bebe"> 
       <img src="imagenes/200118768-producto.webp" alt="bebe Ésika"> 
       <h3>COLONIA AGÚ (Lavanda y Jazmín)</h3> 
       <p>Colonia relajante con lavanda y jazmín. 1 L</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 52.90</p> 
     </div>
     <div class="producto bebe"> 
       <img src="imagenes/200118774-productoo.webp" alt="bebe Ésika"> 
       <h3>TALCO AGÚ (Lavanda y Jazmín)</h3> 
       <p>Talco relajante con lavanda y jazmín. 500 g</p> 
-      <p class="precio">S/ 0.00</p> 
+      <p class="precio">S/ 29.90</p> 
     </div>
-    
+    <div class="producto bebe"> 
+      <img src="imagenes/w=800,h=800,fit=pad (15).webp" alt="bebe Ésika"> 
+      <h3>LOCIÓN HIDRATANTE (Lavanda y Jazmín)</h3> 
+      <p>Loción hidratante relajante para bebé con aroma a extracto de lavanda y jazmín. 450 ml</p> 
+      <p class="precio">S/ 32.90</p> 
+    </div>
     
   </div>
 
@@ -377,6 +410,78 @@
       <p>Limpia, purifica y suaviza. Ideal para piel sensible.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/w=800,h=800,fit=pad (16).webp" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (CORAL PETALE)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/w=800,h=800,fit=pad (17).webp" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (ROSE COTTON)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/orig_lbl1310_215039.jpg" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (NUDE CARAMEL)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/w=800,h=800,fit=pad (18).webp" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (NUDE TRANSLUCIDE)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/w=1500,h=1500,fit=pad (13).webp" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (CERISE BRISE)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto skincare"> 
+      <img src="imagenes/w=1500,h=1500,fit=pad (14).webp" alt="skincare L'bel"> 
+      <h3>BÁLSAMO HIDRATANTE PROTECTOR DE LABIOS (ROSE PARADISE)</h3> 
+      <p>Protege e hidrata los labios hasta por 72 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/images (1).jpg" alt="maquillaje L'bel"> 
+      <h3>KIT DE CEJAS MULTIFUNCIONAL</h3> 
+      <p>Sombras, cera y brocha angular para cejas definidas y de larga duración.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/public (2).webp" alt="maquillaje L'bel"> 
+      <h3>LABIAL LIQUIDO (CHERRY FONDANT)</h3> 
+      <p>De larga duración con ácido hialurónico. Hidratación y máximo color con Infini Absolu.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 224306.png" alt="maquillaje L'bel"> 
+      <h3>LABIAL LIQUIDO (BURGUNDY MAGNIFIQUE)</h3> 
+      <p>De larga duración con ácido hialurónico. Hidratación y máximo color con Infini Absolu.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/a62747737d4e9fc4a2062029bae34515.jpg" alt="maquillaje L'bel"> 
+      <h3>LABIAL LIQUIDO (ROUGE PETAL)</h3> 
+      <p>De larga duración con ácido hialurónico. Hidratación y máximo color con Infini Absolu.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/w=1500,h=1500,fit=pad (12).webp" alt="maquillaje L'bel"> 
+      <h3>LABIAL LIQUIDO (ROSA MEXICANO)</h3> 
+      <p>De larga duración con ácido hialurónico. Hidratación y máximo color con Infini Absolu.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/200113419-PROD.webp" alt="maquillaje L'bel"> 
+      <h3>MÁSCARA DE PESTAÑAS (SUPREME VOLUME)</h3> 
+      <p>Brinda un efecto volumen extremo con Supreme Volume para unas pestañas impactantes.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
     
   </div>
   <button class="flecha der" onclick="moverCatalogo('lbel', 1)">➡</button>
@@ -482,10 +587,100 @@
       <p>Desorodante en formato aerosol sin alcohol.</p> 
       <p class="precio">S/ 0.00</p> 
     </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/w=800,h=800,fit=pad (19).webp" alt="maquillaje Cyzone"> 
+      <h3>LABIAL LÍQUIDO MATE COLOR INTENSO (DEEP RED)</h3> 
+      <p>Color intenso y duradero con acabado mate hasta 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/w=800,h=800,fit=pad (20).webp" alt="maquillaje Cyzone"> 
+      <h3>LABIAL LÍQUIDO MATE COLOR INTENSO (SANGRÍA)</h3> 
+      <p>Color intenso y duradero con acabado mate hasta 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/w=1500,h=1500,fit=pad (15).webp" alt="maquillaje Cyzone"> 
+      <h3>LABIAL LÍQUIDO MATE COLOR INTENSO (RUBY RED)</h3> 
+      <p>Color intenso y duradero con acabado mate hasta 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Labial-Líquido-Mate-Touch-Of-Red-Studio-Look-Cyzone-6-ml.webp" alt="maquillaje Cyzone"> 
+      <h3>LABIAL LÍQUIDO MATE COLOR INTENSO (TOUCH OF RED)</h3> 
+      <p>Color intenso y duradero con acabado mate hasta 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 233241.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL (STRAWBERRY SHAKE)</h3> 
+      <p>Brillo hidratante que aporta color natural y frescura hasta por 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 233252.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL (PINK LEMONADE)</h3> 
+      <p>Brillo hidratante que aporta color natural y frescura hasta por 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 233212.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL (GRAPE JUICE)</h3> 
+      <p>Brillo hidratante que aporta color natural y frescura hasta por 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 233307.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL (CARAMEL LATTE)</h3> 
+      <p>Brillo hidratante que aporta color natural y frescura hasta por 24 horas.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 234341.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL EFECTO VOLUMEN (HOT CHERRY)</h3> 
+      <p>Brillo labial que hidrata y aporta un efecto volumen instantáneo con acabado radiante.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 234332.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL EFECTO VOLUMEN (SPICY LATTE)</h3> 
+      <p>Brillo labial que hidrata y aporta un efecto volumen instantáneo con acabado radiante.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 234406.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL EFECTO VOLUMEN (ROSE PEPPER)</h3> 
+      <p>Brillo labial que hidrata y aporta un efecto volumen instantáneo con acabado radiante.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    <div class="producto maquillaje"> 
+      <img src="imagenes/Captura de pantalla 2025-08-27 234356.png" alt="maquillaje Cyzone"> 
+      <h3>BRILLO LABIAL EFECTO VOLUMEN (CHILLI RED)</h3> 
+      <p>Brillo labial que hidrata y aporta un efecto volumen instantáneo con acabado radiante.</p> 
+      <p class="precio">S/ 0.00</p> 
+    </div>
+    
   </div>
   
   <button class="flecha der" onclick="moverCatalogo('cyzone', 1)">➡</button>
   </div>
+
+  <!-- ================== PROMOCIONES ================== -->
+<h2 id="promociones">🔥 Promociones Especiales 🔥</h2>
+<div class="catalogo promociones">
+  <div class="producto">
+    <img src="" alt="Promo 1">
+    <h3></h3>
+    <p></p>
+    <p class="precio">S/ 0.00</p>
+  </div>
+  <div class="producto">
+    <img src="" alt="Promo 2">
+    <h3></h3>
+    <p></p>
+    <p class="precio">S/ 0.00</p>
+  </div>
+</div>
 
 
 
