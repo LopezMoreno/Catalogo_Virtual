@@ -785,10 +785,54 @@
        }); 
       } 
   function moverCatalogo(marca, direccion) {
-  let contenedor = document.querySelector('.catalogo.' + marca);
-  let scrollAmount = 250; // pixeles por movimiento
+  const contenedor = document.querySelector('.catalogo.' + marca);
+  const scrollAmount = 250; // pixeles por movimiento
   contenedor.scrollBy({ left: direccion * scrollAmount, behavior: 'smooth' });
+
+  // Esperar a que se desplace antes de actualizar
+  setTimeout(() => actualizarFlechas(marca), 400);
 }
+
+function actualizarFlechas(marca) {
+  const contenedor = document.querySelector('.catalogo.' + marca);
+  const btnIzq = contenedor.parentElement.querySelector('.flecha.izq');
+  const btnDer = contenedor.parentElement.querySelector('.flecha.der');
+
+  // Al inicio
+  if (contenedor.scrollLeft <= 0) {
+    btnIzq.style.display = "none";
+  } else {
+    btnIzq.style.display = "block";
+  }
+
+  // Al final
+  if (contenedor.scrollLeft + contenedor.clientWidth >= contenedor.scrollWidth - 1) {
+    btnDer.style.display = "none";
+  } else {
+    btnDer.style.display = "block";
+  }
+}
+
+// Escuchar scroll manual en todos los catálogos
+document.querySelectorAll('.catalogo').forEach(catalogo => {
+  catalogo.addEventListener('scroll', () => {
+    const marca = [...catalogo.classList].find(c => c !== 'catalogo');
+    actualizarFlechas(marca);
+  });
+
+  // Ejecutar al inicio
+  const marca = [...catalogo.classList].find(c => c !== 'catalogo');
+  actualizarFlechas(marca);
+});
+
+// Recalcular al redimensionar ventana
+window.addEventListener('resize', () => {
+  document.querySelectorAll('.catalogo').forEach(catalogo => {
+    const marca = [...catalogo.classList].find(c => c !== 'catalogo');
+    actualizarFlechas(marca);
+  });
+});
+
   </script>
 </body>
 </html>
